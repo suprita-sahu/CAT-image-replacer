@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Cat Image Replacer",
+  "version": "1.0",
+  "description": "Replaces all images on a webpage with random cat images.",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
